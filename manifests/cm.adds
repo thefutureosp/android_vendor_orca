@@ -13,6 +13,30 @@
     },
     {
         "remote":       "cm",
+        "repository":   "android_external_Focal",
+        "target_path":  "external/focal",
+        "revision":     "cm-10.2"
+    }, 
+    {
+        "remote":       "cm",
+        "repository":   "android_packages_apps_Focal",
+        "target_path":  "packages/apps/Focal",
+        "revision":     "cm-10.2"
+    }, 
+    {
+        "remote":       "cm",
+        "repository":   "android_packages_apps_Apollo",
+        "target_path":  "packages/apps/Apollo",
+        "revision":     "cm-10.2"
+    }, 
+    {
+        "remote":       "cm",
+        "repository":   "android_packages_apps_LockClock",
+        "target_path":  "packages/apps/LockClock",
+        "revision":     "cm-10.2"
+    },         
+    {
+        "remote":       "cm",
         "repository":   "android_packages_apps_DSPManager",
         "target_path":  "packages/apps/DSPManager",
         "revision":     "cm-10.2"

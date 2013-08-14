@@ -1,4 +1,5 @@
 # Copyright (C) 2012 ParanoidAndroid Project
+# Portions Modified By Copyright (C) 2013 The Orca Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,31 +14,32 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_manta,$(TARGET_PRODUCT))
+ifeq (orca_maguro,$(TARGET_PRODUCT))
 
-# Define PA bootanimation size
-PARANOID_BOOTANIMATION_NAME := XHDPI
+# Define Orca bootanimation size
+ORCA_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_manta
+OVERLAY_TARGET := pa_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
-# Include ParanoidAndroid common configuration
-include vendor/pa/config/pa_common.mk
+# Include Orca common configuration
+include vendor/orca/config/orca_common.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/samsung/manta/full_manta.mk)
+$(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_manta
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 10
+PRODUCT_NAME := orca_maguro
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mantaray BUILD_FINGERPRINT="google/mantaray/manta:4.3/JWR66V/737497:user/release-keys" PRIVATE_BUILD_DESC="mantaray-user 4.3 JWR66V 737497 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.3/JSS15J/737497:user/release-keys"
+PRIVATE_BUILD_DESC="yakju-user 4.3 JSS15J 737497 release-keys"
 
-# Include ParanoidAndroid repos configuration
-include vendor/pa/config/pa_addons.mk
+# Include Orca repos configuration
+include vendor/orca/config/orca_addons.mk
 
 endif

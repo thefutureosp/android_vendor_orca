@@ -93,7 +93,7 @@ def add_to_manifest(repositories):
 
 def fetch_dependencies(device):
     print 'Looking for product dependencies'
-    dependencies_path = 'vendor/pa/dependencies/' + device + '.dependencies'
+    dependencies_path = 'vendor/orca/dependencies/' + device + '.dependencies'
 
     syncable_repos = []
 

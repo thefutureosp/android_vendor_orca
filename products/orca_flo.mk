@@ -1,4 +1,5 @@
 # Copyright (C) 2012 ParanoidAndroid Project
+# Portions Modified By Copyright (C) 2013 The Orca Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,32 +14,32 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_find5,$(TARGET_PRODUCT))
+ifeq (orca_flo,$(TARGET_PRODUCT))
 
-# Define PA bootanimation size
-PARANOID_BOOTANIMATION_NAME := XHDPI
+# Define ORCA bootanimation size
+ORCA_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xxhdpi
+OVERLAY_TARGET := pa_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
-# Include ParanoidAndroid common configuration
-include vendor/pa/config/pa_common.mk
+# Include ORCA common configuration
+include vendor/orca/config/orca_common.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/oppo/find5/full_find5.mk)
+$(call inherit-product, device/asus/flo/aosp_flo.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_find5
-PRODUCT_BRAND := Oppo
-PRODUCT_MODEL := Find 5
-PRODUCT_MANUFACTURER := Oppo
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=OPPO/oppo_12069/FIND5:4.1.1/JRO03L/1362469752:user/release-keys PRIVATE_BUILD_DESC="msm8960-user 4.1.1 JRO03L eng.oppo.20130328.172033 release-keys"
-PRIVATE_BUILD_DESC="nakasi-user 4.2 JOP40C 527662 release-keys"
+PRODUCT_NAME := orca_flo
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Nexus 7
+PRODUCT_MANUFACTURER := Asus
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/flo:4.3/JOP40C/527662:user/release-keys"
+PRIVATE_BUILD_DESC="nakasi-user 4.3 JOP40C 527662 release-keys"
 
-# Include ParanoidAndroid repos configuration
-include vendor/pa/config/pa_addons.mk
+# Include Orca repos configuration
+include vendor/orca/config/orca_addons.mk
 
 endif

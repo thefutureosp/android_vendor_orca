@@ -35,7 +35,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/pa/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/orca/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -66,15 +66,15 @@ $SED -i \
 	$REPACK/ota/system/build.prop
 
 # Delete ParanoidAndroid specific files
-if [ -f $ANDROID_BUILD_TOP/vendor/pa/tools/squisher.rm ]; then
-	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/pa/tools/squisher.rm`; do
+if [ -f $ANDROID_BUILD_TOP/vendor/orca/tools/squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/orca/tools/squisher.rm`; do
 		rm -f $REPACK/ota/$RM_FILE
 	done
 fi
 
 # Delete target product specific files
-if [ -f $ANDROID_BUILD_TOP/vendor/pa/tools/$TARGET_PRODUCT-squisher.rm ]; then
-	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/pa/tools/$TARGET_PRODUCT-squisher.rm`; do
+if [ -f $ANDROID_BUILD_TOP/vendor/orca/tools/$TARGET_PRODUCT-squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/orca/tools/$TARGET_PRODUCT-squisher.rm`; do
 		rm -f $REPACK/ota/$RM_FILE
 	done
 fi
@@ -91,11 +91,11 @@ rm -rf $REPACK/ota/recovery
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	PAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
+	ORCAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
 	OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
-	: ${PAVERSION:=nightly}
-	OUTFILE=$OUT/$PAVERSION.zip
-	echo PAVERSION: $PAVERSION
+	: ${ORCAVERSION:=nightly}
+	OUTFILE=$OUT/$ORCAVERSION.zip
+	echo ORCAVERSION: $ORCAVERSION
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
@@ -105,8 +105,8 @@ printf "Copying overlay preferences for $OVERLAYTARGET..."
 echo
 mkdir $REPACK/ota/system/etc/paranoid/preferences
 mkdir $REPACK/ota/system/etc/paranoid/preferences/images
-cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
-cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
+cp -r $ANDROID_BUILD_TOP/vendor/orca/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
+cp -r $ANDROID_BUILD_TOP/vendor/orca/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
 
 # Inject build manifest

@@ -7,10 +7,10 @@
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "thefutureosp",
         "repository":   "android_device_lge_mako",
         "target_path":  "device/lge/mako",
-        "revision":     "jb43"
+        "revision":     "orca3"
     },
     {
         "remote":       "github",

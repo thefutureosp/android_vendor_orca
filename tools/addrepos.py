@@ -70,7 +70,7 @@ def add_to_manifest(repositories):
         try:
             repo_revision = repository['revision']
         except:
-            repo_revision = "jb43"
+            repo_revision = "orca3"
 
         try:
             repo_account = repository['account']
@@ -104,7 +104,7 @@ def add_to_manifest(repositories):
 
 def fetch_extras(def_file):
     print 'Looking for add projects entries'
-    projects_path = 'vendor/pa/manifests/' + def_file
+    projects_path = 'vendor/orca/manifests/' + def_file
 
 
     if os.path.exists(projects_path):

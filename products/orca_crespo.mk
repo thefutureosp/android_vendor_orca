@@ -1,4 +1,5 @@
 # Copyright (C) 2012 ParanoidAndroid Project
+# Portions Modified By Copyright (C) 2013 The Orca Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,10 +14,10 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_crespo,$(TARGET_PRODUCT))
+ifeq (orca_crespo,$(TARGET_PRODUCT))
 
-# Define PA bootanimation size
-PARANOID_BOOTANIMATION_NAME := HDPI
+# Define ORCA bootanimation size
+ORCA_BOOTANIMATION_NAME := HDPI
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_hdpi
@@ -24,20 +25,20 @@ OVERLAY_TARGET := pa_hdpi
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
 
-# Include ParanoidAndroid common configuration
-include vendor/pa/config/pa_common.mk
+# Include Orca common configuration
+include vendor/orca/config/orca_common.mk
 
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_crespo
+PRODUCT_NAME := orca_crespo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus S
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_FINGERPRINT="google/soju/crespo:4.1.2/JZO54K/485486:user/release-keys" PRIVATE_BUILD_DESC="soju-user 4.1.2 JZO54K 485486 release-keys"
 
-# Include ParanoidAndroid repos configuration
-include vendor/pa/config/pa_addons.mk
+# Include Orca repos configuration
+include vendor/orca/config/orca_addons.mk
 
 endif

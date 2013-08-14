@@ -37,7 +37,7 @@ if isNullOrEmpty(manufacturer):
 print 'Checking dependencies for device: %s -> %s' % (manufacturer, device)
 
 device_path = 'device/'+manufacturer+'/'+device
-repo_full = 'ParanoidAndroid/android_' + device_path.replace('/', '_')
+repo_full = 'thefutureosp/android_' + device_path.replace('/', '_')
 
 def exists_in_tree(lm, repository):
     for child in lm.getchildren():
@@ -85,7 +85,7 @@ def add_to_manifest(repositories):
         lm = ElementTree.Element('manifest')
 
     for repository in repositories:
-        repo_account = "ParanoidAndroid"
+        repo_account = "thefutureosp"
         repo_name = 'android_'+device_path.replace('/', '_')
         repo_target = device_path
         if exists_in_tree(lm, repo_full):
@@ -94,7 +94,7 @@ def add_to_manifest(repositories):
 
         print 'Adding device: %s -> %s' % (repo_full, repo_target)
         project = ElementTree.Element('project', attrib = { 'path': repo_target,
-            'remote': 'github', 'name': repo_full, 'revision': 'jb43' })
+            'remote': 'github', 'name': repo_full, 'revision': 'orca3' })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])

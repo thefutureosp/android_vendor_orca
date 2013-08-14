@@ -1,30 +1,30 @@
-ifeq (pa_grouper,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_grouper.mk
+ifeq (orca_grouper,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_grouper.mk
 endif
-ifeq (pa_maguro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_maguro.mk
+ifeq (orca_maguro,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_maguro.mk
 endif
-ifeq (pa_mako,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_mako.mk
+ifeq (orca_mako,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_mako.mk
 endif
-ifeq (pa_manta,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_manta.mk
+ifeq (orca_manta,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_manta.mk
 endif
-ifeq (pa_tilapia,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_tilapia.mk
+ifeq (orca_tilapia,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_tilapia.mk
 endif
-ifeq (pa_toro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_toro.mk
+ifeq (orca_toro,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_toro.mk
 endif
-ifeq (pa_toroplus,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_toroplus.mk
+ifeq (orca_toroplus,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_toroplus.mk
 endif
-ifeq (pa_crespo,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_crespo.mk
+ifeq (orca_crespo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_crespo.mk
 endif
-ifeq (pa_find5,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_find5.mk
+ifeq (orca_find5,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_find5.mk
 endif
-ifeq (pa_flo,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_flo.mk
+ifeq (orca_flo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/orca_flo.mk
 endif

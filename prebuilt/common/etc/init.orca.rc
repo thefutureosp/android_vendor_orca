@@ -1,4 +1,4 @@
-# ParanoidAndroid Extras
+# Orca Extras
 import /init.superuser.rc
 
 on init
