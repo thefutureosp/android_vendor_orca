@@ -13,6 +13,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/orca/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk
 
+# Camera support
+PRODUCT_COPY_FILES += \
+    vendor/orca/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/orca/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/orca/prebuilt/common/bin/sysinit:system/bin/sysinit \
