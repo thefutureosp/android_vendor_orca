@@ -6,7 +6,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Orca Packages
 PRODUCT_PACKAGES += \
-    OrcaWallpapers  
+    OrcaWallpapers \
+    SunBeam  
 
 # APPS TO COPY
 PRODUCT_COPY_FILES += \

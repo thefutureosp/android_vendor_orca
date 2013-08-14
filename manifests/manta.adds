@@ -6,21 +6,21 @@
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_audience",
         "target_path":  "vendor/audience",
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_broadcom",
         "target_path":  "vendor/broadcom",
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_samsung",
         "target_path":  "vendor/samsung",

@@ -24,28 +24,28 @@
         "branch":       "cm-10.2"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_oppo",
         "target_path":  "vendor/oppo",
         "revision":     "cm-10.1"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "aaronpoweruser",
         "repository":   "android_kernel_oppo_find5",
         "target_path":  "kernel/oppo/find5",
         "revision":     "pa"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
         "branch":       "cm-10.1"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_audio-caf",
         "target_path":  "hardware/qcom/audio-caf",
@@ -59,21 +59,21 @@
         "branch":       "jb-mr1.1-release"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_camera",
         "target_path":  "hardware/qcom/camera",
         "branch":       "cm-10.1"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
         "branch":       "cm-10.1"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_display-caf",
         "target_path":  "hardware/qcom/display-caf",
@@ -94,7 +94,7 @@
         "branch":       "jb-mr1.1-release"
     },
     {
-        "remote":       "github",
+        "remote":       "gh",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_media",
         "target_path":  "hardware/qcom/media",
