@@ -39,6 +39,19 @@ PRODUCT_MANUFACTURER := Asus
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.2/JOP40C/527662:user/release-keys"
 PRIVATE_BUILD_DESC="nakasi-user 4.2 JOP40C 527662 release-keys"
 
+# Copy TVDPI specific prebuilts
+PRODUCT_COPY_FILES += \
+    vendor/orca/prebuilt/preferences/images/phablet.png:system/etc/paranoid/preferences/images/phablet.png \
+    vendor/orca/prebuilt/preferences/images/phone.png:system/etc/paranoid/preferences/images/phone.png \
+    vendor/orca/prebuilt/preferences/images/tablet.png:system/etc/paranoid/preferences/images/tablet.png \
+    vendor/orca/prebuilt/preferences/images/undefined.png:system/etc/paranoid/preferences/images/undefined.png \
+    vendor/orca/prebuilt/preferences/pa_tvdpi/0_colors.xml:system/etc/paranoid/preferences/0_colors.xml \
+    vendor/orca/prebuilt/preferences/pa_tvdpi/pref_1.xml:system/etc/paranoid/preferences/pref_1.xml \
+    vendor/orca/prebuilt/preferences/pa_tvdpi/pref_2.xml:system/etc/paranoid/preferences/pref_2.xml \
+    vendor/orca/prebuilt/preferences/pa_tvdpi/pref_3.xml:system/etc/paranoid/preferences/pref_3.xml \
+    vendor/orca/prebuilt/preferences/pa_tvdpi/pref_4.xml:system/etc/paranoid/preferences/pref_4.xml \
+    vendor/orca/prebuilt/preferences/pa_tvdpi/pref_5.xml:system/etc/paranoid/preferences/pref_5.xml
+
 # Include Orca repos configuration
 include vendor/orca/config/orca_addons.mk
 
