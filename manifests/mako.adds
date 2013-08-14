@@ -43,13 +43,6 @@
         "revision":     "orca3"
     },
     {
-        "remote":       "gh",
-        "account":      "ORCAOSP",
-        "repository":   "vendor_lge",
-        "target_path":  "vendor/lge",
-        "revision":     "orca3"
-    },
-    {
         "remote":       "cm",
         "repository":   "lge-kernel-mako",
         "target_path":  "kernel/lge/mako",
