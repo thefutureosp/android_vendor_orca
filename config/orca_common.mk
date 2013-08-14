@@ -93,8 +93,8 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
-    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
+    vendor/orca/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
+    vendor/orca/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 ORCA_VERSION_MAJOR = 3
 ORCA_VERSION_MINOR = 0
