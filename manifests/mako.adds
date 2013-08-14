@@ -50,11 +50,10 @@
         "revision":     "jb43"
     },
     {
-        "remote":       "gh",
-        "account":      "ParanoidAndroid",
+        "remote":       "cm",
         "repository":   "lge-kernel-mako",
         "target_path":  "kernel/lge/mako",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "gh",
