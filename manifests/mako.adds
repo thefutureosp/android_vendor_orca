@@ -70,11 +70,10 @@
         "revision":     "refs/tags/android-4.3_r1"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/msm8960",
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_msm8960",
         "target_path":  "hardware/qcom/msm8960",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "aosp",
