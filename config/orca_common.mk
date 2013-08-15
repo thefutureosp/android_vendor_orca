@@ -6,7 +6,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Orca Packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
     OrcaWallpapers \
     SunBeam  
 
