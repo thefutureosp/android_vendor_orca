@@ -37,10 +37,10 @@
     },    
     {
         "remote":       "gh",
-        "account":      "thefutureosp",
-        "repository":   "android_device_lge_mako",
+        "account":      "ORCAOSP",
+        "repository":   "android_device_lge_mako-WIP",
         "target_path":  "device/lge/mako",
-        "revision":     "orca3"
+        "revision":     "jb43"
     },
     {
         "remote":       "gh",
