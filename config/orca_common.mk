@@ -66,6 +66,7 @@ endif
 
 # Embed superuser into settings
 SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 # Enable root for adb+apps
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -73,6 +74,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Superuser
 PRODUCT_PACKAGES += \
+    Superuser \
     su
 
 # device common prebuilts
