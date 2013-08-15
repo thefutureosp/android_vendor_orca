@@ -43,10 +43,11 @@
         "revision":     "orca3"
     },
     {
-        "remote":       "cm",
+        "remote":       "gh",
+        "account":      "ParanoidAndroid",
         "repository":   "lge-kernel-mako",
         "target_path":  "kernel/lge/mako",
-        "revision":     "cm-10.2"
+        "revision":     "jb43"
     },
     {
         "remote":       "cm",
