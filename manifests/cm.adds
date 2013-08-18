@@ -21,7 +21,7 @@
         "remote":       "fu",
         "repository":   "android_packages_apps_Focal",
         "target_path":  "packages/apps/Focal",
-        "revision":     "cm-10.2"
+        "revision":     "orca3"
     }, 
     {
         "remote":       "cm",
