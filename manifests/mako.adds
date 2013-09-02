@@ -38,7 +38,7 @@
     {
         "remote":       "gh",
         "account":      "thefutureosp",
-        "repository":   "android_device_lge_mako",
+        "repository":   "android_device_lge_mako-orca",
         "target_path":  "device/lge/mako",
         "revision":     "orca3"
     },
